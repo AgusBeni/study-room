@@ -84,7 +84,7 @@ const Nav = () => {
                   className="button1_color"
                   onClick={() => setToggleDropDown(false)}
                 >
-                  My Profile
+                  My Room
                 </Link>
                 <Link
                   href="/create-room"

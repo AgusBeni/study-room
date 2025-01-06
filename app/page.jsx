@@ -1,5 +1,3 @@
-import Content from "@components/Content";
-
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col h-64">
@@ -8,7 +6,7 @@ const Home = () => {
         <br className="max-md:hidden" />
       </h1>
       <p className="desc text-center">my study room</p>
-      <Content />
+    
     </section>
   );
 };
