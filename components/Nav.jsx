@@ -23,7 +23,7 @@ const Nav = () => {
   return (
     <nav className="flex-between w-full mb-16 pt-3">
       <Link href="/" className="flex gap-2 flex-center">
-        <p className="max-sm:hidden font-semibold text-lg text-black tracking-wide">
+        <p className="font-semibold text-lg text-black tracking-wide">
           School
         </p>
       </Link>

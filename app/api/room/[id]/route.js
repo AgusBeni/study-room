@@ -1,5 +1,5 @@
 import Room from "@models/room";
-import { connectToDB } from "@utils/database";
+import { connectToDB } from "@database/database";
 
 export const GET = async (request, { params }) => {
   try {

@@ -26,13 +26,8 @@
   @apply px-4 py-1 min-w-[120px] text-center text-black  rounded active:text-red-500 hover:bg-transparent hover:text-red-600 focus:outline-none focus:ring;
 }
 
-
 .button3 {
   @apply px-6 py-2 min-w-[120px] text-center text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring;
-}
-
-.app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .desc {

@@ -1,4 +1,4 @@
-import { connectToDB } from "@utils/database";
+import { connectToDB } from "@database/database";
 import Room from "@models/room";
 
 export const POST = async (req) => {
