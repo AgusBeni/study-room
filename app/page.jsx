@@ -6,7 +6,6 @@ const Home = () => {
         <br className="max-md:hidden" />
       </h1>
       <p className="desc text-center">my study room</p>
-    
     </section>
   );
 };
