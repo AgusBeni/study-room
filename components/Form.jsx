@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
     <section className="w-full max-w-full fkex-start flex-col">
@@ -30,9 +32,9 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
         <div className="flex-end mx-3 mb-5 gap-4">
 
-          <button href="/" className="button_white">
+          <Link href="/profile" className="button_white">
             Cancel
-          </button>
+          </Link>
 
           <button type="submit" disabled={submitting} className="button1_color">
             {submitting ? `${type}...` : type}

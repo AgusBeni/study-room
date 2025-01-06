@@ -26,14 +26,14 @@ export const PATCH = async (request, { params }) => {
     await connectToDB();
 
     const awaitedParams = await params;
-    const Room = await Room.findById(awaitedParams.id);
+    const currentRoom = await Room.findById(awaitedParams.id);
 
-    if (!Room) return new Response("Room not found", { status: 404 });
+    if (!currentRoom) return new Response("Room not found", { status: 404 });
 
-    Room.room = room;
-    Room.desc = desc;
+    currentRoom.room = room;
+    currentRoom.desc = desc;
 
-    await Room.save();
+    await currentRoom.save();
 
     return new Response(JSON.stringify(Room), { status: 200 });
   } catch (error) {

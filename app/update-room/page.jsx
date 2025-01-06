@@ -22,7 +22,7 @@ const UpdateRoom = () => {
     const getRoomDetails = async () => {
       const response = await fetch(`/api/room/${roomId}`);
       const data = await response.json();
-
+      console.log("CHECKKKK INSIDE " + response);
       setPost({
         room: data.room,
         desc: data.desc,

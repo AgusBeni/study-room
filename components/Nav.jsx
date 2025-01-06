@@ -28,7 +28,7 @@ const Nav = () => {
         </p>
       </Link>
 
-      {/* Desktop */}
+      {/* Webapp pc */}
       <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
@@ -65,7 +65,7 @@ const Nav = () => {
         )}
       </div>
 
-      {/* Phone */}
+      {/* Web mobile */}
       <div className="sm:hidden flex relative">
         {session?.user ? (
           <div className="flex">
