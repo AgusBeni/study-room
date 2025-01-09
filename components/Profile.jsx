@@ -1,6 +1,6 @@
 import RoomCard from "./RoomCard";
 
-const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
+const Profile = ({ desc, data, handleEdit, handleDelete }) => {
   return (
     <section className="w-full">
   
