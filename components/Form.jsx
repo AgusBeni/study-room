@@ -13,7 +13,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           <input
             value={post.room}
             onChange={(e) => setPost({ ...post, room: e.target.value })}
-            placeholder="Room name..."
+            placeholder="Room name."
             required
             className="w-full flex mt-2 p-3 text-sm"
           />
