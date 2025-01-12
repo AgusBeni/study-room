@@ -6,6 +6,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 import Form from "@components/Form";
 
+import { Suspense } from "react";
+
 const UpdateRoom = () => {
   const router = useRouter();
 
@@ -58,13 +60,15 @@ const UpdateRoom = () => {
   };
 
   return (
-    <Form
-      type="Edit"
-      post={post}
-      setPost={setPost}
-      submitting={submitting}
-      handleSubmit={UpdateRoom}
-    />
+    <Suspense>
+      <Form
+        type="Edit"
+        post={post}
+        setPost={setPost}
+        submitting={submitting}
+        handleSubmit={UpdateRoom}
+      />
+    </Suspense>
   );
 };
 
