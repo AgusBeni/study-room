@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { useRouter, useSearchParams } from "next/navigation";
 
-import Form from "@/components/Form";
+import Form from "@components/Form";
 
 const UpdateRoom = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const UpdateRoom = () => {
     room: "",
     desc: "",
   });
-  console.log("CHECKKKK " + roomId);
+
   useEffect(() => {
     const getRoomDetails = async () => {
       const response = await fetch(`/api/room/${roomId}`);
