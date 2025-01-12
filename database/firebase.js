@@ -2,8 +2,6 @@
 import { initializeApp } from "firebase/app";
 
 import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
-import exp from "constants";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAhdfQiIWlJiS2KdCmA-pTo2Yu1Pogms2M",
