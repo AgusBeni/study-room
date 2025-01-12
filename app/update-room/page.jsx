@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import UpdateRoom from "./UpdateRoom";
+import UpdateRoom from "./updateRoom";
 
 const Page = ({ searchParams }) => {
   return (
