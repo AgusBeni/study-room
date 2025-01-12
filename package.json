@@ -10,7 +10,6 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "firebase": "^11.1.0",
     "next": "15.1.3",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
