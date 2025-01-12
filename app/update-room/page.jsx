@@ -1,12 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 
 import { useRouter, useSearchParams } from "next/navigation";
 
 import Form from "@components/Form";
-
-import { Suspense } from "react";
 
 const UpdateRoom = () => {
   const router = useRouter();
@@ -24,7 +22,7 @@ const UpdateRoom = () => {
     const getRoomDetails = async () => {
       const response = await fetch(`/api/room/${roomId}`);
       const data = await response.json();
-      console.log("CHECKKKK INSIDE " + response);
+
       setPost({
         room: data.room,
         desc: data.desc,
@@ -60,7 +58,7 @@ const UpdateRoom = () => {
   };
 
   return (
-    <Suspense>
+    <Suspense fallback={<div>Loaading....</div>}>
       <Form
         type="Edit"
         post={post}
